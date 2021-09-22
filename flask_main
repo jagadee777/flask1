@@ -2,9 +2,9 @@ import mysql.connector
 from flask import Flask, redirect, render_template, request
 from flask_mysqldb import MySQL
 app=Flask(__name__)
-app.config['MYSQL_HOST']='database-1.cepf7pclbzhx.us-east-2.rds.amazonaws.com'
-app.config['MYSQL_USER']='admin'
-app.config['MYSQL_PASSWORD']='9951858339'
+app.config['MYSQL_HOST']='mysqldb.c5jsxw0s19qk.us-west-2.rds.amazonaws.com'
+app.config['MYSQL_USER']='mysqluser'
+app.config['MYSQL_PASSWORD']='mysqlpwd'
 app.config['MYSQL_DB']='flask'
 mysql=MySQL(app)
 @app.route('/',methods=['GET','POST'])
